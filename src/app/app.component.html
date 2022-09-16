@@ -309,7 +309,7 @@
       </g>
     </svg>
 
-    <span>{{ title }} is running!</span>
+    <span>{{ title }} 正在运行： 本程序只在excel所有sheet中Title所在列数据后添加</span> <input type="text" [(ngModel)]="changeText">
 
     <svg id="rocket-smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
       <title>Rocket Ship Smoke</title>
@@ -318,5 +318,5 @@
 
   </div>
 
-  <input type="file" class="file-upload" (change)="uploadFile($event)">
+  <input type="file" class="file-upload" multiple (change)="uploadFile($event)">
 <router-outlet></router-outlet>
